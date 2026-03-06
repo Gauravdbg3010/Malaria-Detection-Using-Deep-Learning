@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template, jsonify
-import tensorflow as tf
+#import tensorflow as tf
 import numpy as np
 from PIL import Image
 import os
@@ -8,7 +8,7 @@ from datetime import datetime
 app = Flask(__name__, static_folder="Static")
 
 # model load
-model = tf.keras.models.load_model("Model/malaria_model.h5")
+#model = tf.keras.models.load_model("Model/malaria_model.h5")
 
 UPLOAD_FOLDER = os.path.join("Static", "uploads")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
